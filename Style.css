@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Light-Gray);
+  width: 100%;
+}
+
+.parent_container {
+  width: 50%;
+  margin: 8% 30%;
+  text-align: left;
+}
+
+.community_container {
+  padding: 40px 20px;
+  width: 90%;
+  background-color: white;
+  font-weight: 400;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.community_container h2 {
+  padding: 0px 0px 10px 20px;
+  color: var(--Grayish-Blue);
+}
+
+.community_container h3 {
+  padding: 20px 20px 8px 20px;
+  color: var(--Bright-Yellow);
+}
+
+.community_container p {
+  color: var(--Cyan);
+  font-size: 17px;
+  padding: 10px 0px 10px 20px;
+}
+.community_container p1 {
+  color: var(--Cyan);
+  font-size: 17px;
+  padding: 0px 0px 0px 20px;
+}
+
+.child_container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.subscription {
+  border-bottom-left-radius: 10px;
+  width: 150%;
+  padding: 30px 40px 40px 40px;
+  background-color: var(--Cyan);
+}
+.subscription p {
+  color: var(--Light-Gray);
+  font-weight: 700;
+}
+
+.subscription h4 {
+  color: white;
+  margin: 20px 0px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.subscription h1 {
+  color: white;
+}
+
+.price {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.price p {
+  color: var(--Light-Gray);
+  padding: 9px;
+  opacity: 50%;
+}
+
+.subscription button {
+  border: none;
+  margin: 30px 0px 0px 0px;
+  width: 90%;
+  padding: 15px 0px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: var(--Bright-Yellow);
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0px 20px 70px rgb(101, 100, 100);
+}
+
+.Why {
+  background-color: var(--Grayish-Blue);
+  width: 150%;
+  padding: 50px 30px 0px 35px;
+  color: white;
+  border-bottom-right-radius: 10px;
+}
+
+.Why h4 {
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.Why p {
+  opacity: 70%;
+  padding: 15px 50px 0px 10px;
+  line-height: 22px;
+  margin-right: 40px;
+  font-size: 15px;
+}
+
+@media (min-width: 375px) and (max-width: 500px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .parent_container {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+
+  .community_container p1 {
+    margin-left: 20px;
+    width: 200px;
+  }
+  .child_container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subscription {
+    border-radius: 0px;
+  }
+  .subscription h4 {
+    margin-top: -10px;
+  }
+  .Why {
+    border-radius: 0px 0px 10px 10px;
+  }
+  .Why h4 {
+    margin-top: -30px;
+  }
+  .Why p {
+    margin-bottom: 30px;
+  }
+}
